@@ -8,6 +8,8 @@ const express_1 = __importDefault(require("express"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const Kernal_1 = __importDefault(require("@middlewares/Kernal"));
 const _routes_1 = __importDefault(require("@routes"));
+const cors_1 = __importDefault(require("cors"));
+console.log(cors_1.default, 'cors');
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 const port = Number(process.env.PORT) || 8000;
